@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=[device-width], initial-scale=1.0">
+    <title>{{ cate.get_nome() }}</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div>
+        <h1>{{ cate.get_nome() }}</h1>
+        <h2>{{ cate.get_nome2() }}</h2>
+
+        <h3>{{ cate.get_categoria1() }}</h3>
+        <h3>{{ cate.get_categoria2() }}</h3>
+        <h3>{{ cate.get_categoria3() }}</h3>
+        <h3>{{ cate.get_categoria4() }}</h3>
+        <h3>{{ cate.get_categoria5() }}</h3>
+        <h3>{{ cate.get_categoria6() }}</h3>
+        <h3>{{ cate.get_categoria7() }}</h3>
+        <h3>{{ cate.get_categoria8() }}</h3>
+        <h3>{{ cate.get_categoria9() }}</h3>
+        <h3>{{ cate.get_categoria10() }}</h3>
+        <h3>{{ cate.get_categoria11() }}</h3>
+        <h3>{{ cate.get_categoria12() }}</h3>
+        <h3>{{ cate.get_categoria13() }}</h3>
+        <h3>{{ cate.get_categoria14() }}</h3>
+        <h3>{{ cate.get_categoria15() }}</h3>
+        <h3>{{ cate.get_categoria16() }}</h3>
+        <h3>{{ cate.get_categoria17() }}</h3>
+        <h3>{{ cate.get_categoria18() }}</h3>
+        <h3>{{ cate.get_categoria19() }}</h3>
+        <h3>{{ cate.get_categoria20() }}</h3>
+
+        <h3>Voltar para a tela inicial?</h3> <a href="{{url_for('home')}}">Clique aqui</a></h3>
+    </div>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ titulo }}</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>{{ titulo }}</h1>
+     {% for evento in eventos %}
+        <div>
+            <h2>{{ evento.get_nome() }}</h2>
+            <h2>{{ evento.get_nome2() }}</h2>
+            <h3>{{ evento.get_data() }}</h3>
+            <img src="{{ url_for('static', filename=evento.imagem) }}" alt="{{ evento.get_nome() }}">
+            <h3>Quer saber mais?</h3>
+            <a href="/{{ evento.get_link() }}">Clique aqui</a>
+        </div>
+    {% endfor %}
+</body>
+</html>
